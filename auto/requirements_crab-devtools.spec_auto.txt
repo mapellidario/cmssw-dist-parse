@@ -1,0 +1,76 @@
+coverage==4.5.4
+pylint==1.9.4
+nose==1.3.7
+sphinx==1.3.5 # py2-sphinx.spec 
+mox==0.5.3 # py2-mox.spec 
+future==0.18.2
+httplib2==0.18.0
+pycurl==7.43.0.3
+ipython==0.10 # py2-ipython.spec 
+retry==0.9.1 # py2-retry.spec 
+docutils==0.12 # py2-docutils.spec 
+jinja==2.5.2 # py2-jinja.spec 
+pygments==2.1.3 # py2-pygments.spec 
+setuptools==39.2.0 # py2-setuptools.spec 
+six==1.14.0
+pytz==2019.1
+cjson==1.0.5 # py2-cjson.spec 
+sqlalchemy==1.3.3
+cx-oracle51==5.1.3 # py2-cx-oracle51.spec 
+pyOpenSSL==18.0.0
+mysqldb==1.2.4b4 # py2-mysqldb.spec 
+cryptography==2.4.2
+cffi==1.11.5
+asn1crypto==0.24.0
+enum34==1.1.6
+idna==2.7
+ipaddress==1.0.22
+pycparser==2.19
+archive-tar==1.76 # p5-archive-tar.spec 
+time-hires==1.9715 # p5-time-hires.spec 
+extutils-makemaker==6.63_02 # p5-extutils-makemaker.spec 
+io-zlib==1.10 # p5-io-zlib.spec 
+package-constants==0.02 # p5-package-constants.spec 
+zsi==2.0 # py2-zsi.spec 
+pyxml==0.8.4 # py2-pyxml.spec 
+rucio-clients==1.23.6
+argcomplete==1.9.4
+requests==2.20.0
+urllib3==1.23
+dogpile-cache==0.6.7
+boto==2.49.0
+tabulate==0.8.2
+progressbar2==3.38.0
+bz2file==0.98
+python-magic==0.4.15
+futures==3.2.0
+boto3==1.9.229
+pysftp==0.2.9
+jsonschema==3.2.0
+chardet==3.0.4
+certifi==2018.4.16
+python-utils==2.3.0
+botocore==1.12.229
+jmespath==0.9.4
+s3transfer==0.2.1
+python-dateutil==2.8.0
+paramiko==2.6.0
+bcrypt==3.1.7
+pynacl==1.3.0
+functools32==3.2.3-2
+attrs==19.3.0
+pyrsistent==0.16.0
+importlib-metadata==1.7.0
+zipp==1.2.0
+pathlib2==2.3.5
+contextlib2==0.5.5
+configparser==3.7.4
+scandir==1.10.0
+cx-oracle==5.2.1 # py2-cx-oracle.spec 
+astroid==1.6.6
+backports-functools_lru_cache==1.5
+isort==4.3.17
+mccabe==0.6.1
+singledispatch==3.4.0.3
+lazy-object-proxy==1.3.1
+wrapt==1.11.1

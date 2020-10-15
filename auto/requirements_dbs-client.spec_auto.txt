@@ -1,0 +1,2 @@
+zsi==2.0 # py2-zsi.spec 
+pyxml==0.8.4 # py2-pyxml.spec 

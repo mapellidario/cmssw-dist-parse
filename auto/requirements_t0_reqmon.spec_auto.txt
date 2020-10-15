@@ -1,0 +1,17 @@
+httplib2==0.18.0
+cherrypy==17.4.0
+cheetah==2.4.0 # py2-cheetah.spec 
+pycurl==7.43.0.3
+future==0.18.2
+retry==0.9.1 # py2-retry.spec 
+psutil==5.6.6
+six==1.14.0
+cheroot==6.5.5
+portend==2.4
+more-itertools==5.0.0
+zc-lockfile==1.4
+contextlib2==0.5.5
+backports-functools_lru_cache==1.5
+tempora==1.14.1
+pytz==2019.1
+jaraco-functools==2.0

@@ -1,0 +1,7 @@
+simplejson==1.9.2  
+SQLAlchemy==0.9.6
+httplib2==0.18.0
+Cheetah==2.4.0 
+python-cjson==1.0.5 
+cx_Oracle==5.2.1 
+pycurl==7.43.0.3

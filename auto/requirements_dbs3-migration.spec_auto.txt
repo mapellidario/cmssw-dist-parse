@@ -1,0 +1,7 @@
+simplejson==1.9.2 # py2-simplejson.spec 
+sqlalchemy096==0.9.6
+httplib2==0.18.0
+cheetah==2.4.0 # py2-cheetah.spec 
+cjson==1.0.5 # py2-cjson.spec 
+cx-oracle==5.2.1 # py2-cx-oracle.spec 
+pycurl==7.43.0.3

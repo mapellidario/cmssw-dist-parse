@@ -1,0 +1,12 @@
+httplib2==0.18.0
+sphinx==1.3.5 # py2-sphinx.spec 
+pycurl==7.43.0.3
+ipython==0.10 # py2-ipython.spec 
+retry==0.9.1 # py2-retry.spec 
+docutils==0.12 # py2-docutils.spec 
+jinja==2.5.2 # py2-jinja.spec 
+pygments==2.1.3 # py2-pygments.spec 
+setuptools==39.2.0 # py2-setuptools.spec 
+six==1.14.0
+pytz==2019.1
+cjson==1.0.5 # py2-cjson.spec 
