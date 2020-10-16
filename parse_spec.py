@@ -122,6 +122,7 @@ def get_pipversion(specdir, specfile):
         name_ver = []
         if "### RPM external" in line0:
             name_ver = line0[line0.find("-")+1:].split(" ")
+            logging.debug("{0} {1}".format(specfile, name_ver))
             isin_pip = False
             for line in lines:
                 if "## IMPORT build-with-pip" in line:
@@ -167,7 +168,7 @@ def main():
     args = parser.parse_args()
 
     get_deps_recursive(args.spec_dir, args.spec_file)
-    pprint.pprint(deps_spec)
+    # pprint.pprint(deps_spec)
     logging.info(len(deps_spec))
 
     write_requirements(args.spec_dir, deps_spec, 
