@@ -26,11 +26,6 @@ enum34==1.1.6
 idna==2.7
 ipaddress==1.0.22
 pycparser==2.19
-archive-tar==1.76 # p5-archive-tar.spec 
-time-hires==1.9715 # p5-time-hires.spec 
-extutils-makemaker==6.63_02 # p5-extutils-makemaker.spec 
-io-zlib==1.10 # p5-io-zlib.spec 
-package-constants==0.02 # p5-package-constants.spec 
 zsi==2.0 # py2-zsi.spec 
 pyxml==0.8.4 # py2-pyxml.spec 
 rucio-clients==1.23.6

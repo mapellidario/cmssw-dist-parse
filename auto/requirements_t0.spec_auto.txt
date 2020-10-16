@@ -54,11 +54,6 @@ configparser==3.7.4
 scandir==1.10.0
 setuptools==39.2.0 # py2-setuptools.spec 
 restkit==2.2.1 # py2-restkit.spec 
-archive-tar==1.76 # p5-archive-tar.spec 
-time-hires==1.9715 # p5-time-hires.spec 
-extutils-makemaker==6.63_02 # p5-extutils-makemaker.spec 
-io-zlib==1.10 # p5-io-zlib.spec 
-package-constants==0.02 # p5-package-constants.spec 
 cjson==1.0.5 # py2-cjson.spec 
 stomp==4.1.15 # py2-stomp.spec 
 genson==1.0.2
