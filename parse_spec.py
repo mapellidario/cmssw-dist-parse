@@ -155,12 +155,12 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-d","--spec-dir", \
-    help="spec files directory path", \
+    help="Path of the spec's files directory (e.g. `/path/to/cmssw-dist`)", \
     type=str, \
     required=True, \
     )
     parser.add_argument("-f","--spec-file", \
-    help="spec filename", \
+    help="spec file filename (e.g. `t0.spec`)", \
     type=str, \
     required=True, \
     )
