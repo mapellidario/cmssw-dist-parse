@@ -65,12 +65,21 @@ while `./requirements` contains the manually-fixed versions of the same files.
 Run `caniusepython3` on all the manually fixed requirements with
 
 ```bash
+# just one
+python3 ~/.local/bin/caniusepython3 --requirements /src/requirements/requirements_wmagent.spec.txt
+
 # fish shell
 for i in (ls requirements/*); echo "####"; echo "-> " $i; python3 ~/.local/bin/caniusepython3 --requirements $i; end
 
 # bash inside the docker
 cd src
 for i in `ls requirements/*`; do echo "####" && echo "-> " $i && caniusepython3 --requirements $i; done
+```
+
+possible paths for caniusepython3 by as installed by pip
+```
+/usr/local/bin/caniusepython3
+~/.local/bin/caniusepython3
 ```
 
 Results are reported below. 
