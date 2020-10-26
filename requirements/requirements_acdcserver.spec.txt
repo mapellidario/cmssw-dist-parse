@@ -1,0 +1,9 @@
+httplib2==0.18.0
+Sphinx==1.3.5
+# setuptools==39.2.0 # py2-setuptools.spec, pythonhosted 
+restkit==2.2.1
+# docutils==0.12 # py2-docutils.spec , sourceforge
+Jinja2==2.5.2 
+Pygments==2.1.3 
+six==1.14.0
+pytz==2019.1

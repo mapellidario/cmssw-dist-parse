@@ -67,6 +67,7 @@ Run `caniusepython3` on all the manually fixed requirements with
 ```bash
 # just one
 python3 ~/.local/bin/caniusepython3 --requirements /src/requirements/requirements_wmagent.spec.txt
+python3 /usr/local/bin/caniusepython3 --requirements /src/requirements/requirements_wmagent.spec.txt
 
 # fish shell
 for i in (ls requirements/*); echo "####"; echo "-> " $i; python3 ~/.local/bin/caniusepython3 --requirements $i; end
