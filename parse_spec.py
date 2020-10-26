@@ -103,6 +103,7 @@ def get_deps_recursive(specdir, specfile):
     # first time that we call this, no specfile is saved because
     # is it the parent specfile
     specs_py2, specs_all = get_deps_spec(specdir, specfile)
+    logging.info("{0} {1}".format(specfile, specs_all))
     logging.info("{0} {1}".format(specfile, specs_py2))
     for spec in specs_py2:
         if spec not in deps_spec:
