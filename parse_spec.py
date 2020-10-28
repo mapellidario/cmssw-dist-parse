@@ -166,9 +166,18 @@ def main():
     type=str, \
     required=True, \
     )
+    parser.add_argument('--no-recursive', action='store_true')
     args = parser.parse_args()
 
-    get_deps_recursive(args.spec_dir, args.spec_file)
+    if not args.no_recursive: 
+        # default behavior
+        get_deps_recursive(args.spec_dir, args.spec_file)
+    else:
+        # when using --no-recursive argument 
+        specs_py2, _ = get_deps_spec(args.spec_dir, args.spec_file)
+        for spec in specs_py2:
+            if spec not in deps_spec:
+                deps_spec.append( spec )
     # pprint.pprint(deps_spec)
     logging.info(len(deps_spec))
 
