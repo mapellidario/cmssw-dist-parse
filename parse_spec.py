@@ -2,16 +2,16 @@
 
 ## Intro
 
-This script has been written to parse WMCore clients' code dependencies
-as described in https://github.com/cms-sw/cmsdist/tree/comp_gcc630 
-and produce `requirements.txt`.
-The end purpose is to automatically check the **python** dependencies,
-gathered from pip, of a package built from a cmssw-dist spec file, 
-support python3.
+This script has been written to produce requirements.txt files for
+WMCore and its clients packages by recursively parsing spec files.
+We considered spec files at https://github.com/cms-sw/cmsdist/tree/comp_gcc630 .
+The end purpose is to automatically check if the **python** dependencies
+(in particular the ones gathered from pip) 
+of a package, that is built from a cmssw-dist spec file, support python3.
 If a library supports python2 only it would stop the 
 py2->py2&py3 migration / modernization.
 
-## Step 1: Get the `requirements.txt` for `t0.spec` with
+## Step 1: Get the `requirements.txt` for a package, such as `t0.spec`
 
 ```bash
 BASEPATH=/path/to/local/github.com/cmsdist/
@@ -25,8 +25,6 @@ of the specfile that we want to examine.
 The output is saved in `$PWD/requirements_$SPECFILE_auto.txt`
 
 ## Step 2: How to interpret the results.
-
-### how to interpret the result
 
 If a line of a `requirements.txt` contains a reference to a spec file, such
 as 
@@ -43,10 +41,44 @@ that a human should add the correct line to the requirements file:
 * if the package is not in `pypi`, comment the line and check manually
   if the third-party dependency supports python2. do not rely on `caniusepython3`
 
+Frequent manual changes:
+
+Packages that are not downloaded from pip
+* py2-docutils: sourceforge
+* py2-mox: googlecode
+* py2-setuptools: pythonhosted
+
+Packages that are built form pip
+* py2-cheetah: Cheetah
+* py2-cjson: python-cjson
+* py2-cx-oracle: cx_Oracle
+* py2-funcsigs: funcsigs
+* py2-jinja: Jinja2
+* py2-mock: mock
+* py2-mysqldb: MySQL-python
+* py2-nats: nats-client
+* py2-pbr: pbr
+* py2-pep8: pep8
+* py2-pygments: Pygments
+* py2-sphinx: Sphinx
+* py2-stopm: stomp.py
+* py2-restkit: restkit
+
 ## Step 3: Analysie requirements.txt
 
 Install `caniusepython3` if you want to automatically check the 
 requirements.txt files.
+
+```
+python3 -m pip install --user caniusepython3
+
+#Or run it insude a docker
+# on the host
+docker run -it -v $PWD:/src python:3.8 bash
+# inside the docker
+python3 -m pip install caniusepython3
+python3 /usr/local/bin/caniusepython3 --requirements /src/requirements_t0.spec.txt
+```
 
 ACHTUNG! These results are not complete!
 1. `caniusepython3` has been designed to check only libraries distributed
@@ -57,7 +89,7 @@ ACHTUNG! These results are not complete!
   python version trove classifiers.
 
 ## TL;DR Use this tool with care: It can not provide any definitive answers,
-but it can help identifying show-stoppers.
+but it can help identifying show-stoppers for the migration.
 
 '''
 
